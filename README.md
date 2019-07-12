@@ -219,9 +219,9 @@
 
 1.获取代码 
   
-    git  clone  https://github.com/1032231418/Bind-Web.git  #git  克隆下来
+    git  clone  https://github.com/ymx8383521/Bind-Web.git  #git  克隆下来
     cd Bind-Web
-    pip install -r  requirement.txt'
+    pip install -r  requirement.txt
  
 2.数据库配置
  
