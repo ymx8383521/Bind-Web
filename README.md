@@ -225,14 +225,14 @@
  
 2.数据库配置
  
-        1.)   CREATE DATABASE  devops   CHARACTER SET utf8 COLLATE utf8_general_ci;  #创建数据库
+        1.)   CREATE DATABASE db_ops CHARACTER SET utf8 COLLATE utf8_general_ci;  #创建数据库
 		
         2.)配置文件devops/settings 里连接数据库
 		
                 DATABASES = {
                     'default': {
                         'ENGINE': 'django.db.backends.mysql',
-                        'NAME':'devops',
+                        'NAME':'db_ops',
                         'USER': 'root',
                         'PASSWORD': '123456',
                         'HOST': '127.0.0.1',
