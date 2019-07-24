@@ -10,6 +10,7 @@
 
 <h2 align = "center">一．源码安装配置Bind: </h2>
 
+    yum -y install make gcc-c++ cmake bison-devel  ncurses-devel python-devel python-ply bind-utils
     ./configure --prefix=/usr/local/bind/ \
     --with-dlz-mysql=/usr/local/mysql \
     --enable-threads=no --enable-largefile \
