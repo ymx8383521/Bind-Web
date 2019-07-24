@@ -226,6 +226,7 @@
 2.数据库配置
  
         1.)   CREATE DATABASE db_ops CHARACTER SET utf8 COLLATE utf8_general_ci;  #创建数据库
+	      grant all privileges on db_ops.* to op_oss@'%' identified by 'JqIrsM1hVvo8'
 		
         2.)配置文件devops/settings 里连接数据库
 		
@@ -233,8 +234,8 @@
                     'default': {
                         'ENGINE': 'django.db.backends.mysql',
                         'NAME':'db_ops',
-                        'USER': 'root',
-                        'PASSWORD': '123456',
+                        'USER': 'op_oss',
+                        'PASSWORD': 'JqIrsM1hVvo8',
                         'HOST': '127.0.0.1',
                         'PORT':'3306',
                     }
