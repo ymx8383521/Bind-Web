@@ -78,7 +78,7 @@
     # 指定服务器记录哪些日志，和在哪里记录日志消息
     logging {
         channel bind_log {
-            file "/usr/local/bind/logs/bind.log" versions 3 size 100m;
+            file "/usr/local/bind/var/logs/bind.log" versions 3 size 100m;
             severity debug;
             print-time yes;
             print-severity yes;
@@ -162,7 +162,7 @@
     
     logging {
         channel bind_log {
-            file "/export/servers/bind/logs/bind.log" versions 3 size 100m;
+            file "/usr/local/bind/var/logs/bind.log" versions 3 size 100m;
             severity debug;
             print-time yes;
             print-severity yes;
