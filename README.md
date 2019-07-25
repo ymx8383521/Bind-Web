@@ -60,7 +60,7 @@
         directory "/usr/local/bind/var";
         pid-file "named.pid";               # named进程的pid
         dump-file "bind_dump.db";     # 服务器在收到rndc dump命令时，转储数据到文件的路径
-        statistics-file "/export/servers/bind/var/bind.stats";   
+        statistics-file "/usr/local/bind/var/bind.stats";   
         allow-query{ trust-lan; };        # 允许trust-lan ip查询 
         allow-transfer { 172.20.10.61;   #允许哪些主机从服务器接受传送
                         172.20.10.62; };
@@ -144,10 +144,10 @@
         dnssec-validation no;
         datasize unlimited;
             stacksize unlimited;
-            directory "/export/servers/bind/var";
-            pid-file "/export/servers/bind/var/bind.pid";
-            dump-file "/export/servers/bind/var/bind_dump.db";
-            statistics-file "/export/servers/bind/var/bind.stats";
+            directory "/usr/local/bind/var";
+            pid-file "/usr/local/bind/var/bind.pid";
+            dump-file "/usr/local/bind/var/bind_dump.db";
+            statistics-file "/usr/local/bind/var/bind.stats";
         allow-query{ trust-lan; };
         allow-transfer { 172.20.10.61; };
         notify yes;
