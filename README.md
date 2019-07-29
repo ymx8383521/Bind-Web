@@ -302,7 +302,8 @@
     ) engine=InnoDB default charset=utf8 comment='DNS授权传送信息';
 
 <h2 align = "center">四．Bind-Web使用 </h2>
-参考：http://wiki.vknow.com/display/yunwei/bind  
+参考：http://wiki.vknow.com/display/yunwei/bind   
+
 1. slave配置zone
 
 
